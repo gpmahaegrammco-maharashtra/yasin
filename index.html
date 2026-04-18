@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्रमाणपत्र (दाखला) सत्यापन</title>
+
+    <!-- ✅ Marathi Font Fix -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0b1c34; 
+            margin: 0;
+            padding: 0;
+
+            /* ✅ Fixed Font */
+            font-family: 'Noto Sans Devanagari', Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 450px;
+            margin-top: 40px;
+            padding: 30px 25px;
+            box-sizing: border-box;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .logo-box {
+            border-top: 1px solid #4CAF50;
+            border-left: 1px solid #4CAF50;
+            border-right: 1px solid #FF9800;
+            border-bottom: 1px solid #1976D2;
+            display: inline-block;
+            padding: 12px 25px;
+            margin-bottom: 25px;
+            background-color: #fff;
+        }
+
+        .aaple-sarkar-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .as-top {
+            display: flex;
+            align-items: flex-end;
+            gap: 3px;
+        }
+
+        .as-text-1 {
+            color: #0c7b46;
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .as-icon {
+            width: 38px;
+            height: 38px;
+            margin-bottom: 2px;
+        }
+
+        .as-bottom {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding-left: 45px;
+        }
+
+        .as-text-2 {
+            color: #f37021;
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 1;
+            margin-top: -4px;
+        }
+
+        .heading-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            color: #004bb7;
+            margin-bottom: 25px;
+        }
+
+        .heading-icon {
+            width: 42px;
+            height: 42px;
+        }
+
+        .heading-text {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+            color: #004bb7;
+        }
+
+        .subtitle {
+            color: #444;
+            font-size: 13px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .data-container {
+            text-align: left;
+            background-color: #fafafa;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+        }
+
+        .data-row {
+            padding: 15px 0;
+            border-bottom: 1px solid #eaeaea;
+            font-size: 14px;
+            color: #222;
+            line-height: 1.4;
+        }
+
+        .data-row:last-child {
+            border-bottom: none;
+        }
+
+        .footer-note {
+            font-size: 13px;
+            color: #333;
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            text-align: left;
+        }
+
+        .back-btn {
+            background-color: #1a73e8;
+            color: #ffffff;
+            border: none;
+            padding: 10px 16px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo-box">
+        <div class="aaple-sarkar-container">
+            <div class="as-top">
+                <span class="as-text-1">आपले</span>
+                <svg class="as-icon" viewBox="0 0 50 50">
+                    <circle cx="25" cy="14" r="4.5" fill="#f37021"/>
+                    <path d="M19 21 h12 l2.5 15 h-17 z" fill="#f37021"/>
+                    <path d="M10 40 Q 25 18, 40 40 Z" fill="#e0e0e0"/>
+                    <path d="M16 40 Q 25 24, 34 40 Z" fill="#ffffff"/>
+                    <rect x="18" y="30" width="1.5" height="10" fill="#cccccc"/>
+                    <rect x="24" y="30" width="1.5" height="10" fill="#cccccc"/>
+                    <rect x="30" y="30" width="1.5" height="10" fill="#cccccc"/>
+                    <rect x="8" y="40" width="34" height="4" fill="#34a853"/>
+                    <rect x="8" y="44" width="34" height="2" fill="#f37021"/>
+                </svg>
+            </div>
+            <div class="as-bottom">
+                <span class="as-text-2">सरकार</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading-container">
+        <svg class="heading-icon" viewBox="0 0 64 64">
+            <rect x="8" y="16" width="40" height="28" rx="2" fill="#eef3f9" stroke="#40559b" stroke-width="2.5"/>
+            <line x1="14" y1="22" x2="32" y2="22" stroke="#40559b" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="14" y1="28" x2="34" y2="28" stroke="#40559b" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="14" y1="34" x2="24" y2="34" stroke="#40559b" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 14 40 Q 16 37, 18 40 T 24 40" fill="none" stroke="#40559b" stroke-width="2"/>
+            <path d="M 42 32 L 42 50 L 46 46 L 50 50 L 50 32 Z" fill="#eef3f9" stroke="#40559b" stroke-width="2.5"/>
+            <circle cx="46" cy="30" r="8" fill="#ffffff" stroke="#40559b" stroke-width="3"/>
+            <circle cx="46" cy="30" r="6" fill="#ffffff" stroke="#40559b" stroke-width="2.5"/>
+            <circle cx="46" cy="30" r="2.5" fill="#40559b"/>
+        </svg>
+        <h2 class="heading-text">प्रमाणपत्र (दाखला) सत्यापन</h2>
+    </div>
+
+    <!-- ✅ Retyped line (bug fix) -->
+    <div class="subtitle">
+        ग्रामपंचायत - चिंचोली, तालुका - परतूर, जिल्हा - जालना
+    </div>
+
+    <div class="data-container">
+        <div class="data-row">दाखला क्रमांक - ५४६७६७०७००२७३</div>
+        <div class="data-row">दाखल्याचे नाव - विवाह नोंद दाखला</div>
+        <div class="data-row">दाखला मागणी केलेल्या व्यक्तीचे नाव - <strong>यासीन खाजा कुरेशी </strong></div>
+        <div class="data-row">ग्रामसेवकांचे नाव - <strong>रमेश मुंजाजी घाटूळ</strong></div>
+        <div class="data-row">दाखला वितरण दिनांक - ०९-०४-२०२६</div>
+    </div>
+
+    <div class="footer-note">
+        * वरील दाखला ग्रामपंचायत चिंचोल, तालुका - परतूर, जिल्हा - जालना यांचे<br>वतीने वितरीत केलेला आहे.
+    </div>
+
+    <div class="btn-container">
+        <button type="button" class="back-btn">Back</button>
+    </div>
+</div>
+
+</body>
+</html>
